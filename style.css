@@ -1,0 +1,166 @@
+.container{
+    width: 360px;
+    margin: 0 auto;
+    animation-name: example;
+}
+.the-row-flex{
+    display: flex;
+    flex-direction: row;
+}
+.robot-left-hand{
+    display:flex;
+    flex-direction: column;
+    margin: auto;   
+}
+.robot-left-hand .part-one{
+    width: 60px;
+    height: 40px;
+    background-color: rgb(104, 161, 226);
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    animation-name: example;
+    animation-duration: 4s; 
+}
+.robot-left-hand .part-two{
+    width: 60px;
+    height: 70px;
+    background-color: rgb(104, 161, 226);
+    animation-name: example;
+    animation-duration: 4s; 
+}
+.robot-left-hand .part-three{
+    width: 60px;
+    height: 40px;
+    background-color: rgb(104, 161, 226);
+    border-bottom-left-radius:50%;
+    border-bottom-right-radius:50%;
+    animation-name: example;
+    animation-duration: 4s; 
+}
+.robot-hd-bd-col-flex{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 400px;
+}
+.robot-hd-bd-col-flex .head{
+    background-color: rgb(104, 161, 226);
+    width: 200px;
+    height: 130px; 
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    display: flex;
+    flex-direction: row;
+    align-content: flex-end;
+    justify-content: space-around;
+    animation-name: example2;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+.head:hover {
+	width: 300px;
+    transition: 1s ease-in-out;
+}
+.robot-hd-bd-col-flex .head .left-eye{
+    background-color: white;
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+    align-self: flex-end;
+    justify-content: space-around;
+    margin-bottom: 25px;
+    transition: 1s ease-in-out;
+
+}
+.robot-hd-bd-col-flex .head .right-eye{
+    background-color: white;
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+    align-self: flex-end;
+    justify-content: space-around;
+    margin-bottom: 25px;
+    transition: 1s ease-in;
+}
+.robot-hd-bd-col-flex .body{
+    margin-top: 10px;
+    background-color: rgb(104, 161, 226);
+    width: 200px;
+    height: 180px;
+}
+.robot-hd-bd-col-flex .legs{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.robot-hd-bd-col-flex .legs .left-leg{
+    width: 60px;
+    background-color: rgb(104, 161, 226);
+    height: 90px;
+    border-bottom-right-radius: 40%;
+    border-bottom-left-radius: 40%;
+}
+.robot-hd-bd-col-flex .legs .left-leg:hover{
+    -webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+    transform: rotate(20deg);
+}
+
+.robot-hd-bd-col-flex .legs .right-leg{
+    width: 60px;
+    background-color: rgb(104, 161, 226);
+    height: 90px;
+    border-bottom-right-radius: 40%;
+    border-bottom-left-radius: 40%;
+}
+
+.robot-right-hand{
+    display:flex;
+    flex-direction: column;
+    margin: auto; 
+}
+.robot-right-hand .part-one{
+    width: 60px;
+    height: 40px;
+    background-color: rgb(104, 161, 226);
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    animation-name: example2;
+    animation-duration: 4s;
+    animation-iteration-count: 99;
+}
+.robot-right-hand .part-two{
+    width: 60px;
+    height: 70px;
+    background-color: rgb(104, 161, 226);
+    animation-name: example2;
+    animation-duration: 4s;
+    animation-iteration-count: 99;
+}
+.robot-right-hand .part-three{
+    width: 60px;
+    height: 40px;
+    background-color: rgb(104, 161, 226);
+    border-bottom-left-radius:50%;
+    border-bottom-right-radius:50%;
+    animation-name: example2;
+    animation-duration: 4s;
+    animation-iteration-count: 99;
+}
+
+/* THE ANIMATION PART STARTS HERE*/
+
+@keyframes example {
+    from {background-color: red;}
+    to {background-color: yellow;}
+  }
+
+
+  @keyframes example2 {
+    0%   {background-color: red;}
+    25%  {background-color: yellow;}
+    50%  {background-color: blue;}
+    100% {background-color: green;}
+  }
